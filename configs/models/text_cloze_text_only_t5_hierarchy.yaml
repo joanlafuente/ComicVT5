@@ -1,0 +1,18 @@
+tokenizer: "sentence-transformers/all-MiniLM-L6-v2"
+architecture: "t5-small"
+classname: "TextClozeTextOnlyT5HierarchyModel"
+
+num_tokens: 32100
+embedding_size: 512
+encoder_size: 512
+dropout: 0.4
+dropout_p: 0.2
+
+answer_candidates: 3
+answer_max_tokens: 30
+answer_embed_size: 384
+
+pooler_size: 256
+
+metrics:
+  - accuracy

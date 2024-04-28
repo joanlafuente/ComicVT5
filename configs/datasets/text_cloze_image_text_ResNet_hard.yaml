@@ -1,0 +1,8 @@
+name: "comics_images_Sim_CLR_text"
+mode: "hard"
+
+path_SIM_CLR_model: "/home/jlafuente/ComicsQA/Models/test_model_25_epochs_730k_img.pt"
+panels_features_path: "/data/data/datasets/COMICS/Sim_CLR_panels_features/resnet50__panels_features.pkl"
+# panels_features_path: "/home/jlafuente/ComicsQA/Datasets/comics/panels_features/resnet50__panels_features.pkl"
+answer_max_tokens: 30
+context_max_speech_size: 30

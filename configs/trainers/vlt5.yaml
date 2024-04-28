@@ -1,0 +1,11 @@
+epochs: 10
+runs_path: "./runs/"
+report_path: "./reports/"
+
+optimizer:
+  type: "adamw"
+  warmup_ratio: 0.05
+  weight_decay: 0.01
+  gradient_accumulation_steps: 80
+  adam_eps: 0.000001
+  lr: 0.01

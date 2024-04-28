@@ -1,0 +1,9 @@
+name: "text_cloze_image_text_vlt5_simCLR"
+mode: "easy_context_textract"
+panels_features_path: "/data/data/datasets/COMICS/Sim_CLR_panels_features/Sim_CLR_panels_features.pkl"
+num_answers: 3
+answer_max_tokens: 30
+context_max_speech_size: 30
+n_boxes: 1
+max_text_length: 400
+gen_max_length: 2

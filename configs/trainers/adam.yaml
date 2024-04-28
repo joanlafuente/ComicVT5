@@ -1,0 +1,8 @@
+epochs: 20
+runs_path: "./runs/"
+report_path: "./reports/"
+
+optimizer:
+  type: "adam"
+  # lr: 0.01
+  lr: 0.00001

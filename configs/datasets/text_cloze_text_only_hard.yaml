@@ -1,0 +1,4 @@
+name: "text_cloze_text_only"
+mode: "hard"
+answer_max_tokens: 30
+context_max_speech_size: 30

@@ -1,0 +1,5 @@
+name: "text_cloze_image_text"
+mode: "hard"
+panel_features_path: "beit_features.h5"
+answer_max_tokens: 30
+context_max_speech_size: 30

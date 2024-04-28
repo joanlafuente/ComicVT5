@@ -1,0 +1,9 @@
+epochs: 15
+runs_path: "./runs/"
+report_path: "./reports/"
+
+optimizer:
+  type: "adamw"
+  lr: 0.00001
+  step_size: 3
+  gamma: 0.75

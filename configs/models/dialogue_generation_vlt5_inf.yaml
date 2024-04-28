@@ -1,0 +1,40 @@
+classname: "DialogueGenerationVLT5Model"
+backbone: "t5-base"
+tokenizer: "vlt5"
+pretrained_weights: '/data/data/datasets/COMICS/weights_VL-T5/Epoch30.pth'
+
+# Dimensions of the input features (768 if Blip2/VIT is being used, 2048 if Resnet50/ComicsRN is being used)
+feature_dim_image: 768
+
+feat_dim: 2048
+pos_dim: 4
+n_images: 4
+vocab_size: 32200
+
+
+use_vis_order_embedding: True
+
+dropout_rate: 0.1
+dropout: 0.1
+attention_dropout: 0.1
+activation_dropout: 0.1
+
+use_vis_layer_norm: True
+individual_vis_layer_norm: True
+losses: "lm,obj,attr,feat"
+
+share_vis_lang_layer_norm: False
+classifier: False
+
+add_sampling2prediction: True
+
+metrics:
+- bleu
+- bleu1
+- bleu2
+- bleu3
+- bleu4
+- meteor
+- rougel
+- rouge1
+- rouge2
