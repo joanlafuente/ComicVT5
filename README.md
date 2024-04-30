@@ -74,25 +74,6 @@ The runs folder is where the training logs will be saved. The report folder is w
 ## Code structure
 
 ```sh
-# Run dataset setup and feature extraction
-./tools
-    extract_visual_features/
-    setup_dataset/
-
-# Store dataset
-./datasets
-    COMICS/
-        frcnn_features/
-            boxes36.h5
-        text_cloze_train_easy.csv
-        ...
-    ...
-
-# Store pre-trained weights
-./pretrained_weights
-    vlt5_epoch30.pth           <= The VL-T5 model expects this file to be in this folder (It can be changed in its config file).
-    ...
-
 # Store configuration
 ./config
     datasets/
@@ -146,3 +127,5 @@ To evaluate the model, change the ```--mode``` to "eval".
          url = {https://arxiv.org/pdf/2403.03719}
 }
 ```
+## Acknowledgments
+* Sergi Masip Cabeza for providing the starting point of the [code](https://github.com/Atenrev/comics-dialogue-generation/tree/master).
